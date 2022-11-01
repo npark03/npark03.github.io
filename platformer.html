@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan's Platformer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <canvas id="canvas" height="836" width="1470"></canvas>
+    <style>
+      body {
+        background-color: #0e2229;
+        margin: 0;
+      }
+      img {
+        position: absolute;
+        left: 0px;
+        visibility: hidden;
+      }
+
+      button {
+        position: absolute;
+        left: 600px;
+        top: 500px;
+        font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+        border: none;
+        padding: 3vh;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 20px;
+        background-color: #0e2229;
+        color: white;
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+        margin: 10px;
+        opacity: 0.5;
+      } 
+      button:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+    </style>
+    <img id="idle0" src="sprites/adventurer-idle-00.png">
+    <img id="idle1" src="sprites/adventurer-idle-01.png">
+    <img id="idle2" src="sprites/adventurer-idle-02.png">
+    <img id="idle3" src="sprites/adventurer-idle-03.png">
+
+    <img id="right0" src="sprites/adventurer-run-00.png">
+    <img id="right1" src="sprites/adventurer-run-01.png">
+    <img id="right2" src="sprites/adventurer-run-02.png">
+    <img id="right3" src="sprites/adventurer-run-03.png">
+    <img id="right4" src="sprites/adventurer-run-04.png">
+    <img id="right5" src="sprites/adventurer-run-05.png">
+
+    <img id="left0" src="sprites/adventurer-runl-00.png">
+    <img id="left1" src="sprites/adventurer-runl-01.png">
+    <img id="left2" src="sprites/adventurer-runl-02.png">
+    <img id="left3" src="sprites/adventurer-runl-03.png">
+    <img id="left4" src="sprites/adventurer-runl-04.png">
+    <img id="left5" src="sprites/adventurer-runl-05.png">
+
+    <img id="rightup0" src="sprites/adventurer-jump-02.png">
+    <img id="rightup1" src="sprites/adventurer-jump-03.png">
+    <img id="rightdown0" src="sprites/adventurer-fall-00.png">
+    <img id="rightdown1" src="sprites/adventurer-fall-01.png">
+
+    <img id="leftup0" src="sprites/adventurer-jumpl-02.png">
+    <img id="leftup1" src="sprites/adventurer-jumpl-03.png">
+    <img id="leftdown0" src="sprites/adventurer-falll-00.png">
+    <img id="leftdown1" src="sprites/adventurer-falll-01.png">
+
+    <img id="leftslide0" src="sprites/adventurer-slidel-00.png">
+    <img id="leftslide1" src="sprites/adventurer-slidel-01.png">
+
+    <img id="rightslide0" src="sprites/adventurer-slider-00.png">
+    <img id="rightslide1" src="sprites/adventurer-slider-01.png">
+
+    <img id="castlebackground" src="castle/old-dark-castle-interior-background.png">
+    <img id="groundimg" src="castle/Ground.png">
+    <img id="castlelevel2" src="castle/level2.png">
+    <img id="castlelevel3" src="castle/level3.png">
+    <img id="castlelevel4" src="castle/level4.png">
+    <img id="castlelevel5" src="castle/level5.png">
+    <img id="castlelevel6" src="castle/level6.png">
+  </head>
+  <body>
+    <script src="platformer.js"></script>
+  </body>
+</html>
